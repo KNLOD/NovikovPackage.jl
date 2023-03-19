@@ -2,5 +2,5 @@ using NovikovPackage
 using Test
 
 @testset "NovikovPackage.jl" begin
-    # Write your tests here.
+    @test NovikovPackage.getRPeaks(["0", "0", "0", "R", "R", "0"]) == ["R", "R"]
 end
